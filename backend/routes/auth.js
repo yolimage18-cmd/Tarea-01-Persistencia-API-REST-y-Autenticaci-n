@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { nanoid } = require('nanoid');
 const { readDb, writeDb } = require('../db');
-//prueba
+
 const router = express.Router();
 
 // POST /api/auth/register
