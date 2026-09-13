@@ -1,7 +1,3 @@
-// middleware/auth.js
-// Middleware que protege las rutas: exige un token JWT válido en el
-// encabezado "Authorization: Bearer <token>".
-
 const jwt = require('jsonwebtoken');
 
 function authMiddleware(req, res, next) {

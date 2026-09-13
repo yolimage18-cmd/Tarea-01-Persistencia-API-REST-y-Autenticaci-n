@@ -1,9 +1,3 @@
-// Prueba de widget básica (ver Unidad 2, Ejercicio 10 del módulo).
-//
-// Verifica que la pantalla inicial (Splash) se construye sin errores
-// y muestra el nombre de la app.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:notas_app/main.dart';

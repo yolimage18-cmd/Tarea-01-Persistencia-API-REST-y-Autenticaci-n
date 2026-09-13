@@ -1,11 +1,3 @@
-// db.js
-// Base de datos muy sencilla basada en un archivo JSON en disco.
-// Se eligió este enfoque (en lugar de un motor con dependencias nativas
-// como sqlite3) para que "npm install" funcione sin problemas en
-// cualquier computador (Windows, macOS, Linux) sin necesidad de
-// compiladores adicionales. Para un proyecto académico es más que
-// suficiente y mantiene el código fácil de leer.
-
 const fs = require('fs');
 const path = require('path');
 
@@ -28,7 +20,7 @@ function readDb() {
   try {
     return JSON.parse(raw);
   } catch (err) {
-    // Si el archivo está corrupto, se reinicia (solo pasaría en un entorno de pruebas)
+    // Si el archivo está corrupto, se reinicia 
     const initial = { users: [], calificaciones: [] };
     fs.writeFileSync(DB_PATH, JSON.stringify(initial, null, 2));
     return initial;

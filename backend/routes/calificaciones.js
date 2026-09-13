@@ -1,8 +1,4 @@
 // routes/calificaciones.js
-// CRUD de calificaciones (GET, POST, PUT, DELETE). Todas las rutas están
-// protegidas: solo el usuario autenticado puede ver/editar SUS registros.
-//
-// Cada calificación representa la nota de un estudiante en una
 // asignatura: { studentName, subject, grade, comment }.
 
 const express = require('express');

@@ -1,15 +1,3 @@
-// server.js
-// Punto de entrada del backend. Expone una API REST con:
-//  - Autenticación (registro / login) con JWT              -> /api/auth
-//  - CRUD de calificaciones de estudiantes protegido por token -> /api/calificaciones
-//
-// Para ejecutarlo:
-//   1. npm install
-//   2. copiar .env.example a .env
-//   3. npm start
-//
-// Ver README.md en la raíz del proyecto para la guía paso a paso completa.
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
