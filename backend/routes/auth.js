@@ -1,5 +1,4 @@
 // routes/auth.js
-// Endpoints de autenticación: registro e inicio de sesión con JWT.
 
 const express = require('express');
 const bcrypt = require('bcryptjs');

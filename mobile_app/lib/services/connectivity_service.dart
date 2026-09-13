@@ -1,7 +1,5 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 
-/// Envuelve el paquete connectivity_plus para exponer un stream sencillo
-/// de "true/false" (con internet / sin internet).
 class ConnectivityService {
   final Connectivity _connectivity = Connectivity();
 

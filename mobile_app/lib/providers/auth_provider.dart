@@ -6,8 +6,7 @@ import '../services/db_service.dart';
 
 enum AuthStatus { checking, authenticated, unauthenticated }
 
-/// Maneja el estado de autenticación de toda la app (patrón visto en el
-/// módulo: ChangeNotifier + Provider).
+
 class AuthProvider extends ChangeNotifier {
   final ApiService apiService;
   final AuthService authService;
@@ -19,7 +18,7 @@ class AuthProvider extends ChangeNotifier {
   String? errorMessage;
   bool isLoading = false;
 
-  /// Se ejecuta al abrir la app: intenta recuperar una sesión guardada.
+  
   Future<void> restoreSession() async {
     final session = await authService.restoreSession();
     if (session != null) {

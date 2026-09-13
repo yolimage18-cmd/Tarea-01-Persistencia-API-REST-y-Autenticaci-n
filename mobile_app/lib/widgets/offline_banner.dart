@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Banner vivo y visible que aparece cuando el dispositivo está sin
-/// conexión, para que el usuario entienda que está trabajando en modo
-/// offline (los cambios se guardan localmente y se sincronizarán después).
 class OfflineBanner extends StatelessWidget {
   final bool isSyncing;
 
@@ -32,7 +29,6 @@ class OfflineBanner extends StatelessWidget {
   }
 }
 
-/// Pequeña franja que se muestra mientras la sincronización está en curso.
 class SyncingBanner extends StatelessWidget {
   const SyncingBanner({super.key});
 

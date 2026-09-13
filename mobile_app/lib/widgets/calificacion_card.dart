@@ -3,9 +3,6 @@ import 'package:intl/intl.dart';
 import '../models/calificacion.dart';
 import '../theme/app_theme.dart';
 
-/// Tarjeta de calificación: avatar con iniciales del estudiante, nombre y
-/// asignatura, una insignia de color con la nota (verde si aprueba, coral
-/// si no), comentario y estado de sincronización.
 class CalificacionCard extends StatelessWidget {
   final Calificacion item;
   final VoidCallback onTap;

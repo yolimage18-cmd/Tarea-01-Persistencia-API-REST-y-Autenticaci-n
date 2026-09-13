@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Paleta de colores vivos y moderna para toda la app.
 class AppColors {
   static const Color primary = Color(0xFF6C5CE7); // Morado vibrante
   static const Color primaryDark = Color(0xFF4834D4);
@@ -14,8 +13,6 @@ class AppColors {
   static const Color textDark = Color(0xFF2D2A4A);
   static const Color textMuted = Color(0xFF8B88A8);
 
-  /// Colores de acento para las tarjetas de notas (se elige uno según el
-  /// id de la nota, para que la lista se vea colorida pero consistente).
   static const List<Color> noteAccents = [
     Color(0xFF6C5CE7),
     Color(0xFF00CEC9),

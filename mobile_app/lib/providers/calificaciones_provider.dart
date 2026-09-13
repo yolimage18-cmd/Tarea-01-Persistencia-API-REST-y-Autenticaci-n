@@ -6,20 +6,7 @@ import '../services/api_service.dart';
 import '../services/connectivity_service.dart';
 import '../services/db_service.dart';
 
-/// Corazón de la app: administra las calificaciones combinando
-/// persistencia local (SQLite) con el API REST remoto, y sincroniza
-/// automáticamente cuando la conexión se restablece.
-///
-/// Estrategia "offline-first":
-///   1. Toda operación (crear/editar/eliminar) se aplica PRIMERO en
-///      SQLite, así la interfaz nunca espera a la red.
-///   2. Cada registro guarda una bandera `isSynced`. Si es falsa,
-///      significa que el cambio todavía no se ha reflejado en el servidor.
-///   3. `syncNow()` recorre los registros pendientes y los envía al API
-///      (POST/PUT/DELETE) y luego trae los registros del servidor.
-///   4. Se llama a `syncNow()` automáticamente al iniciar la app, al
-///      recuperar la conexión, y además el usuario puede forzarla
-///      deslizando la lista (pull to refresh).
+
 class CalificacionesProvider extends ChangeNotifier {
   final ApiService apiService;
   final ConnectivityService connectivityService;

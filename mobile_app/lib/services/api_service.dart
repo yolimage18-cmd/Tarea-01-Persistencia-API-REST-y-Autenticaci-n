@@ -2,8 +2,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../utils/constants.dart';
 
-/// Excepción específica para errores de la API, con el mensaje que
-/// el backend devolvió (para mostrarlo directamente en la interfaz).
 class ApiException implements Exception {
   final String message;
   final int? statusCode;
@@ -13,8 +11,6 @@ class ApiException implements Exception {
   String toString() => message;
 }
 
-/// Cliente HTTP central: aquí se concentran TODAS las llamadas al API
-/// REST (GET, POST, PUT, DELETE) descrito en la Tarea 01.
 class ApiService {
   String? _token;
 

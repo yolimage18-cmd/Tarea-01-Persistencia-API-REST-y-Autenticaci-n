@@ -1,9 +1,3 @@
-/// Modelo de una Calificación (la nota de un estudiante en una asignatura).
-///
-/// - [localId]: identificador único generado en el dispositivo (siempre existe).
-/// - [serverId]: identificador asignado por el backend (null hasta que se sincroniza).
-/// - [isSynced]: indica si la versión local ya coincide con la del servidor.
-/// - [isDeleted]: marca "borrado lógico" mientras se espera sincronizar la baja.
 class Calificacion {
   final String localId;
   String? serverId;
@@ -27,7 +21,7 @@ class Calificacion {
     this.isDeleted = false,
   });
 
-  /// Nota mínima para aprobar (escala 0.0 - 5.0, estándar en Colombia).
+ 
   static const double passingGrade = 3.0;
 
   bool get isPassing => grade >= passingGrade;
@@ -83,7 +77,7 @@ class Calificacion {
     );
   }
 
-  /// Crea una calificación a partir del JSON que devuelve el API REST.
+ 
   factory Calificacion.fromServerJson(Map<String, dynamic> json, {String? localId}) {
     return Calificacion(
       localId: localId ?? json['id'] as String,

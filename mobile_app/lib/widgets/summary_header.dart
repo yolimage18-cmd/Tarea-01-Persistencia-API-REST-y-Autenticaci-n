@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Franja superior con el resumen de las calificaciones cargadas:
-/// cuántas hay y cuál es el promedio general (con color según si el
-/// promedio aprueba o no). Es el "toque diferente" que no tiene la
-/// referencia: da contexto de un vistazo antes de leer la lista.
 class SummaryHeader extends StatelessWidget {
   final int count;
   final double average;

@@ -3,8 +3,6 @@ import '../models/user.dart';
 import '../utils/constants.dart';
 import 'api_service.dart';
 
-/// Gestiona el registro, inicio de sesión y la sesión persistida
-/// (token JWT + datos del usuario) usando SharedPreferences.
 class AuthService {
   final ApiService api;
   AuthService(this.api);

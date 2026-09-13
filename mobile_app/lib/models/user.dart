@@ -1,4 +1,3 @@
-/// Modelo del usuario autenticado.
 class AppUser {
   final String id;
   final String name;

@@ -10,9 +10,6 @@ import '../widgets/summary_header.dart';
 import 'calificacion_editor_screen.dart';
 import 'login_screen.dart';
 
-/// Pantalla principal: "Gestión de calificaciones". Lista los registros
-/// del usuario, con un resumen de promedio arriba, estado de
-/// conexión/sincronización visible y acceso a crear/editar/eliminar.
 class GradesScreen extends StatefulWidget {
   const GradesScreen({super.key});
 

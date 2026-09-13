@@ -3,12 +3,6 @@ import 'package:sqflite/sqflite.dart';
 import '../models/calificacion.dart';
 import '../utils/constants.dart';
 
-/// Servicio de persistencia local con SQLite (paquete sqflite).
-///
-/// Esta es la pieza clave del requisito de "Persistencia": todas las
-/// calificaciones se guardan primero en esta base de datos local, así
-/// que la app funciona perfectamente sin conexión. Cuando hay internet,
-/// el SyncService (CalificacionesProvider) refleja los cambios en el servidor.
 class DbService {
   DbService._internal();
   static final DbService instance = DbService._internal();
@@ -59,7 +53,6 @@ class DbService {
     );
   }
 
-  /// Devuelve todas las calificaciones visibles (no eliminadas), más recientes primero.
   Future<List<Calificacion>> getAll() async {
     final db = await database;
     final rows = await db.query(
@@ -71,7 +64,7 @@ class DbService {
     return rows.map((row) => Calificacion.fromDbMap(row)).toList();
   }
 
-  /// Registros pendientes por enviar al servidor (creados/editados/borrados offline).
+  
   Future<List<Calificacion>> getPending() async {
     final db = await database;
     final rows = await db.query('calificaciones', where: 'isSynced = ?', whereArgs: [0]);
@@ -87,8 +80,7 @@ class DbService {
     );
   }
 
-  /// Elimina físicamente un registro de la base local (se usa una vez que
-  /// el servidor confirmó el borrado, o si nunca llegó a sincronizarse).
+  
   Future<void> hardDelete(String localId) async {
     final db = await database;
     await db.delete('calificaciones', where: 'localId = ?', whereArgs: [localId]);
@@ -101,8 +93,6 @@ class DbService {
     return Calificacion.fromDbMap(rows.first);
   }
 
-  /// Limpia toda la base local (se usa al cerrar sesión, para que los
-  /// registros de un usuario no se mezclen con los de otro en el mismo dispositivo).
   Future<void> clearAll() async {
     final db = await database;
     await db.delete('calificaciones');

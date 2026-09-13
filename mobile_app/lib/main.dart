@@ -20,9 +20,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Una única instancia de ApiService y ConnectivityService se
-    // comparte entre los providers para reutilizar el token y el
-    // estado de conexión.
+    
     final apiService = ApiService();
     final connectivityService = ConnectivityService();
 

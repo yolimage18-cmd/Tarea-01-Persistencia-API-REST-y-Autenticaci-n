@@ -1,4 +1,3 @@
-/// Validaciones reutilizables para los formularios de la app.
 class Validators {
   static String? name(String? value) {
     if (value == null || value.trim().isEmpty) {
@@ -52,8 +51,6 @@ class Validators {
     return null;
   }
 
-  /// Valida que la calificación sea un número entre 0.0 y 5.0
-  /// (escala colombiana estándar).
   static String? grade(String? value) {
     if (value == null || value.trim().isEmpty) {
       return 'Ingresa la calificación';

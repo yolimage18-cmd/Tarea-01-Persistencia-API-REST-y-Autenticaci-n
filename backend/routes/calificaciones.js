@@ -1,5 +1,4 @@
 // routes/calificaciones.js
-// asignatura: { studentName, subject, grade, comment }.
 
 const express = require('express');
 const { nanoid } = require('nanoid');

@@ -5,9 +5,6 @@ import '../theme/app_theme.dart';
 import 'grades_screen.dart';
 import 'login_screen.dart';
 
-/// Pantalla inicial: mientras se comprueba si ya existe una sesión
-/// guardada (token JWT en SharedPreferences), muestra un loader con
-/// la identidad visual de la app.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

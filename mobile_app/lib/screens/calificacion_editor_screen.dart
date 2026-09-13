@@ -7,9 +7,6 @@ import '../theme/app_theme.dart';
 import '../utils/validators.dart';
 import '../widgets/custom_text_field.dart';
 
-/// Pantalla para registrar o editar la calificación de un estudiante.
-/// Al guardar, el cambio se escribe primero en SQLite (persistencia
-/// local) y luego se intenta sincronizar con el servidor si hay conexión.
 class CalificacionEditorScreen extends StatefulWidget {
   final Calificacion? item;
   const CalificacionEditorScreen({super.key, this.item});
