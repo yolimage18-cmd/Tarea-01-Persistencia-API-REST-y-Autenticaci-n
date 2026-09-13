@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Middleware simple de registro de peticiones (útil para depurar desde la app móvil)
+
 app.use((req, res, next) => {
   const timestamp = new Date().toISOString();
   console.log(`[${timestamp}] ${req.method} ${req.originalUrl}`);
