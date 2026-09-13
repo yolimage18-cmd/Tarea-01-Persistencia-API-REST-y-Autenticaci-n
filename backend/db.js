@@ -32,3 +32,4 @@ function writeDb(data) {
 }
 
 module.exports = { readDb, writeDb };
+//prueba
