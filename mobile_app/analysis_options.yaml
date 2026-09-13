@@ -1,0 +1,8 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Se relajan un par de reglas de estilo para mantener el código
+    # del proyecto académico simple y fácil de leer.
+    prefer_const_constructors: true
+    avoid_print: false

@@ -1,0 +1,46 @@
+name: notas_app
+description: "App móvil de gestión de notas con autenticación, API REST y persistencia offline (Tarea 01)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Peticiones HTTP al API REST
+  http: ^1.2.1
+
+  # Persistencia local (base de datos SQLite embebida)
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # Guardar el token de sesión (JWT) y datos simples
+  shared_preferences: ^2.2.3
+
+  # Detectar si hay conexión a internet (para el modo offline y la sincronización)
+  connectivity_plus: ^6.0.5
+
+  # Manejo de estado (visto en el módulo: Provider)
+  provider: ^6.1.2
+
+  # Generar identificadores únicos para las notas creadas sin conexión
+  uuid: ^4.4.2
+
+  # Formato de fechas legible en la interfaz
+  intl: ^0.19.0
+
+  # Tipografía moderna para la interfaz
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

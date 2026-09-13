@@ -1,0 +1,22 @@
+# Archivos generados por Flutter (se recrean automáticamente)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+.idea/
+
+# Carpetas de plataformas generadas por "flutter create"
+# (se generan al ejecutar flutter create . según la guía del README)
+android/
+ios/
+web/
+linux/
+macos/
+windows/
+
+# Archivos de entorno local
+.env

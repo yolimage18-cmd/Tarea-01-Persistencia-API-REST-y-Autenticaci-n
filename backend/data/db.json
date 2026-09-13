@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "AtGwgeYe0QgHFGaQNB0Em",
+      "name": "Yolima Gutierrez",
+      "email": "yolimage@gmail.com",
+      "passwordHash": "$2a$10$/nF/PDuOLhkqU9XI76FRK.IqOuQxKW9WRBmTrpsnFO8uwGOCDhwia",
+      "createdAt": "2026-09-13T03:49:58.444Z"
+    },
+    {
+      "id": "OFsTQMnQP-4WrZghkwHzy",
+      "name": "Prueba del trabajo",
+      "email": "prueba1@gmail.com",
+      "passwordHash": "$2a$10$qz6KhVOCDLnKbnPc4R3Ko.Gpjo4gHvrlq8YfUIXZ0qN/NT.ETMsJu",
+      "createdAt": "2026-09-13T05:40:53.966Z"
+    }
+  ],
+  "calificaciones": [
+    {
+      "id": "VJZs7b15gqmUHCtqs1eWD",
+      "userId": "AtGwgeYe0QgHFGaQNB0Em",
+      "studentName": "Alejandra Tavera",
+      "subject": "Matematicas",
+      "grade": 4.8,
+      "comment": "Buen trabajo!",
+      "createdAt": "2026-09-13T04:15:31.710Z",
+      "updatedAt": "2026-09-13T05:48:58.309Z"
+    },
+    {
+      "id": "gOf7GHYy1MzXjnIY3ud87",
+      "userId": "AtGwgeYe0QgHFGaQNB0Em",
+      "studentName": "Alejandra Tavera",
+      "subject": "programacion",
+      "grade": 2.1,
+      "comment": "Por mejorar",
+      "createdAt": "2026-09-13T04:18:16.956Z",
+      "updatedAt": "2026-09-13T04:19:19.240Z"
+    }
+  ]
+}
